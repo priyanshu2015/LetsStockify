@@ -9,6 +9,7 @@ You can check the requirements.txt for the required dependencies.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Check the [CONTRIBUTING](https://github.com/priyanshu2015/LetsStockify/blob/main/contributing.md) for more info.
 
 
 ## License

@@ -23,6 +23,8 @@ async def stockTracker(request):
     if not is_loginned:
         return HttpResponse("Login First")
     stockpicker = request.GET.getlist('stockpicker')
+    stockshare=str(stockpicker)[1:-1]
+    
     print(stockpicker)
     data = {}
     available_stocks = tickers_nifty50()
@@ -56,4 +58,4 @@ async def stockTracker(request):
             
     
     print(data)
-    return render(request, 'mainapp/stocktracker.html', {'data': data, 'room_name': 'track'})
+    return render(request, 'mainapp/stocktracker.html', {'data': data, 'room_name': 'track','selectedstock':stockshare})
